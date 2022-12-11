@@ -1,6 +1,6 @@
 import axios from "axios";
 // const url = "http://localhost:5000/api/post";
-const url = "https://apnakitchen-api-zk6n.onrender.com";
+const url = "https://apnakitchen-api-zk6n.onrender.com/api/post";
 
 
 export default class API {
