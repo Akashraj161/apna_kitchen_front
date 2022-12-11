@@ -29,7 +29,7 @@
         <div class="g-col-6" v-for="post in posts" :key="post._id">
            <div class="card"  style="width: 18rem;">
             <div class="img-hover img-hover-zoom">
-              <img v-bind:src="`http://localhost:5000/${post.image}`" style="height:250px" class="card-img-top" alt="">
+              <img v-bind:src="`https://apnakitchen-api-zk6n.onrender.com/${post.image}`" style="height:250px" class="card-img-top" alt="">
             </div>
               
                 <div class="card-body">
