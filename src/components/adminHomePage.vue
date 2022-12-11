@@ -52,7 +52,7 @@ export default {
        let text = "Do you want to Delete the item permanently";
      if (confirm(text) == true) {
        await API.deletePost(id);
-       location.reload();
+      //  location.reload();
    
   } 
     }
