@@ -11,7 +11,7 @@
       <div class="flex-container">
        
            <div class="card" v-for="post in posts" :key="post._id" style="width: 18rem;">
-              <img v-bind:src="`http://localhost:5000/${post.image}`" class="card-img-top" style="height:250px" alt="img">
+              <img v-bind:src="`https://apnakitchen-api-zk6n.onrender.com/${post.image}`" class="card-img-top" style="height:250px" alt="img">
                 <div class="card-body">
                   <h5 class=" resName">{{post.restaurantName}}</h5>
                   <p class="resAddress">{{post.address}}</p>

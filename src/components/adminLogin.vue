@@ -46,7 +46,7 @@ components: {
   },
   methods: {
     async logIn() {
-      let result = await axios.post("http://localhost:5000/api/adminlogin", {
+      let result = await axios.post("https://apnakitchen-api-zk6n.onrender.com/api/adminlogin", {
         name: this.name,
         password: this.password,
       });

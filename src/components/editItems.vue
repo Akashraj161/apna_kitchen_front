@@ -42,7 +42,7 @@
          <div>
              <h3 class="heading">Upload-Image</h3><hr>
             <input type="file" class="offset-md-2" @change="selectImage"  id="image" name="image " />
-              <img v-bind:src="`http://localhost:5000/${post.image}`" width="150px" alt="">
+              <img v-bind:src="`https://apnakitchen-api-zk6n.onrender.com/${post.image}`" width="150px" alt="">
           </div> 
           <br>
         <h3 class="heading">Seller Details</h3><hr>
