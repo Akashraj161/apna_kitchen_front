@@ -9,8 +9,8 @@
             type="text"
             v-model="post.foodName"
             class="form-control"
-            name="email"
-            placeholder="name@example.com"
+            name="foodname"
+            placeholder="Food Name"
             :rules = "rules"
           />
           <label for="floatingInput">Food Name</label>
@@ -20,8 +20,9 @@
             type="text"
             v-model="post.description"
             class="form-control"
-            name="password"
-            placeholder="Password"
+            name="description"
+            maxlength = "50"
+            placeholder="Description"
           />
           <label for="floatingPassword">Food Description</label>
         </div><br>

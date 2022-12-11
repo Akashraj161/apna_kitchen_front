@@ -6,15 +6,17 @@
       {{this.$route.params.message}}
     </div>
     <router-link to="/addItem"><button class="btn btn-primary" >Add New Food Item</button></router-link><br><br><br>
-
+  
     <div class="container2">
       <div class="flex-container">
        
            <div class="card" v-for="post in posts" :key="post._id" style="width: 18rem;">
-              <img v-bind:src="`http://localhost:5000/${post.image}`" class="card-img-top" alt="">
+              <img v-bind:src="`http://localhost:5000/${post.image}`" class="card-img-top" style="height:250px" alt="img">
                 <div class="card-body">
-                  <h5 class="card-title">{{post.foodName}}</h5>
-                  <p class="card-text">{{post.description}}</p>
+                  <h5 class=" resName">{{post.restaurantName}}</h5>
+                  <p class="resAddress">{{post.address}}</p>
+                  <p class=" foodName">{{post.foodName}}</p>
+                  <p class="foodDesc">{{post.description}}</p>
                   <router-link :to="{name: 'edit-items', params:{id : post._id }}" ><button class="btn btn-success" >Edit</button></router-link>
                   <button class="btn btn-danger" @click="removeItem(post._id)" >Delete</button>
                   
@@ -73,12 +75,21 @@ export default {
 .flex-container div {
   background-color: #f1f1f1;
   margin: 30px;
-  padding: 20px;
+  padding: 5px;
 
 }
 .card{
-  min-height: 500px;
+  min-height: 550px;
   position: relative;
+}
+.foodName{
+  color: #e14d2a;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.resName{
+  color: #e14d2a;
 }
 
 .btn-success{

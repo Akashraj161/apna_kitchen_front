@@ -37,3 +37,11 @@ export default {
   name: "navBar",
 };
 </script>
+
+<style scoped>
+.nav-link:hover{
+  background-color: #e14d2a;
+  border-radius: 10px;
+  color: #fff;
+}
+</style>

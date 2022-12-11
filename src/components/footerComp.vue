@@ -24,14 +24,16 @@
                     <li><a href="">Cancellation & Return</a></li>
                     <br/>
                 </ul>
-            </div>
-              <div>
-              <h4 class="foottitle">Contact Details</h4>
+            </div >
+              <div class="contact-items">
+                 <ul style="list-style:none;">
+              <li><a class="foottitle" href="">Contact Details</a></li>
               <br/>
-              <a href="mailto:support@Electro.com" style="color: #fff;"> Email <br> support@Apnakitchen.com</a>
+              <li><a href="mailto:support@Electro.com" style="color: #fff;"> Email <br> support@Apnakitchen.com</a></li>
               <br/>
               <br/>
-              <a href="tel:2278401410">Phone: <br> +91-2278401410</a>
+              <li><a href="tel:2278401410">Phone: <br> +91-2278401410</a></li>
+               </ul>
               </div>
           </div>
          

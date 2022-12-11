@@ -4,12 +4,28 @@
 <div class="container text-center">
   <div class="row">
     <div class="col-sm-8">
-      <img v-bind:src="`http://localhost:5000/${post.image}`" class="card-img-top" style="width: 45rem" alt="">
+      <img v-bind:src="`http://localhost:5000/${post.image}`" class="card-img-top" style="height: 400px" alt="">
+      <h1 class="foodname">{{post.foodName}}</h1>
+      <h4 class="fooddesc">{{post.description}}</h4>
     </div>
     <div class="col-sm-4">
-      <h1>{{post.foodName}}</h1>
-      <h4>{{post.description}}</h4>
-      <p>{{post.address}}</p>
+      <h2 class="resname">{{post.restaurantName}}</h2>
+      <p class="resadderss">{{post.address}}</p>
+      <p>{{post.phoneNo}}</p>
+
+      
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Weekly Rs.{{post.priceWeekly}}/-
+  </label>
+
+ <br>
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Monthly Rs.{{post.priceMonthly}}/-
+  </label>
+  <br>
+
       
        <button class="btn btn-primary" type="button">Subscribe Meal Plan</button>
     </div>
@@ -46,5 +62,14 @@ async created(){
 }
 .btn{
   width: 70%;
+}
+.foodname , .resname{
+  margin-top: 40px;
+  color: #e14d2a;
+}
+
+.resadderss{
+  font-size: 18px;
+  font-weight: 400;
 }
 </style>
