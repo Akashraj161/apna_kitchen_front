@@ -10,7 +10,7 @@
             v-model="name"
             class="form-control"
             name="name"
-           
+            placeholder="User Name"
           />
           <label for="floatingInput">Admin User Name</label>
         </div>
@@ -20,7 +20,7 @@
             v-model="password"
             class="form-control"
             name="password"
-           
+           placeholder="Password"
           />
           <label for="floatingPassword">Password</label>
         </div>
