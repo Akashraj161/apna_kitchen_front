@@ -74,7 +74,7 @@ export default {
 }
 .flex-container div {
   background-color: #f1f1f1;
-  margin: 30px;
+  margin: 30px 0px 30px 30px;
   padding: 5px;
 
 }

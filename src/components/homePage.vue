@@ -100,7 +100,7 @@ export default {
 }
 .card{
   padding: 15px;
-  margin: 30px 100px;
+  margin: 30px 80px;
   min-height: 500px;
 }
 
