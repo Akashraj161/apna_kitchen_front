@@ -10,9 +10,10 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+Start the server for forntend
+
+```bash
+  npm run serve 
 ```
 
 ### Lints and fixes files
